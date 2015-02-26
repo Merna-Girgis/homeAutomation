@@ -1,0 +1,60 @@
+<?php session_start(); ?>
+<?include ’getStates.php’;?>
+<html>
+<script type="text/javascript">
+function changetext( el ){
+if ( el.value === "ON" )
+{el.value = "OFF";}
+else{
+el.value = "ON";}}
+
+function changecolor(e2)
+{
+ if ( e2.style.backgroundColor == "red" ){
+        e2.style.backgroundColor = "green";}
+ else{
+     e2.style.backgroundColor = "red";}
+ }
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+</script>
+<body background="BG.jpg" />
+
+
+<h1 style= " color : black " align="center"><b><i><font  - size="7"><width="40">Bed Room  
+</b></i></font size> </h1>
+
+<img src="5.jpg" width="500" height="400"  - style="position: absolute;
+top: 150px; right: 95px;" />
+
+<div style= " color : black ; position: absolute; top:  
+120px; left: 80px;" align="justify">
+ 
+  <h3><br><b><i><font size="5"> AC On/Off : <input type  ="button" value="ON" readonly id="on/off" style="width: 
+40px; height: 30px; border-radius:10px; background:green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+
+ <h3><br><b><i><font size="5"> Light Control : <input type  ="button" value="ON" readonly id="light_control" style="width: 
+40px; height: 30px; border-radius:10px; background:green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+
+ <h3><br><b><i><font size="5"> Gas Sensor : <input type 
+="button" value="ON" readonly id="window_security" style="width: 
+40px; height: 30px; border-radius:10px; background: green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+
+<h3><br><b><i><font size="5"> window Sensor : <input type 
+="button" value="ON" readonly id="window_security" style="width: 
+40px; height: 30px; border-radius:10px; background: green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+
+<h3><br><b><i><font size="5"> Door Security: <input type="button" value="ON" readonly id="door_security" style="width:
+40px; height: 30px; border-radius:10px; background: green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+
+<h3><br><b><i><font size="5"> Smoke Sensor: <input type="button" value="ON" readonly id="smoke_sensor" style="width:
+40px; height: 30px; border-radius:10px; background: green "
+onclick="changetext(this); changecolor(this);"/></font></i></b></br> </h3>
+</html>
